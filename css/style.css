@@ -12,6 +12,10 @@ body {
 
 .btn{
    background-color: brown;
+   width: 200px;
+   height: 50px;
+   font-size: large;
+   color: white;
 }
 
 .btn:hover {
