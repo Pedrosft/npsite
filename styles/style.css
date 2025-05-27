@@ -21,10 +21,15 @@ body{
     font-family: var(--font-text);
 }
 
+.botao{
+    display: inline;
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+}
 
 .botao a{
-    display: inline;
-    background-color: var(--color4-esura2);
+    display: inline-block;
+    background-color: var(--color7-muitoescura);
     color: white;
     border: none;
     padding: 12px 24px;
@@ -37,6 +42,7 @@ body{
 }
 
 .botao:hover a{
-    background-color: var(--color3-meiotermo);
-    ;
+    color: var(--color6-muitoClara);
+    background: linear-gradient(45deg, var(--color1-clara1), var(--color7-muitoescura));
+    box-shadow: 0 0 3px 1px var(--color1-clara1);
 }
