@@ -31,6 +31,7 @@ ul {
     display: flex;
     font-family: var(--primary-font);
     font-size: 25px;
+    align-items: center;
 }
 
 .nav-link:hover {
