@@ -13,7 +13,7 @@
 
     /* Fonte padão */
     --primary-font: "Oswald", sans-serif;
-    --secondary-font: "Roboto Slab", Arial
+    --secondary-font: "Roboto Slab", Arial;
 }
 
 body{
@@ -21,3 +21,22 @@ body{
     font-family: var(--font-text);
 }
 
+
+.botao a{
+    display: inline;
+    background-color: var(--color4-esura2);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  
+}
+
+.botao:hover a{
+    background-color: var(--color3-meiotermo);
+    ;
+}
