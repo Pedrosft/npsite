@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Oswald:wght@200..700&display=swap');
+
+
 :root{
-    --cor-prin: red;
     --color1-clara1: #a9b0ff;
     --color2-clara2: #8791dd;
     --color3-meiotermo: #6473bb;
@@ -7,4 +9,12 @@
     --color5-escura1: #3e4b8c;
     --color-muitoClara:#ebecfb;
 
+    /* Fonte padão */
+    --font-text:  font-family: "Oswald", sans-serif;
 }
+
+body{
+    background-color: var(--color-muitoClara);
+    font-family: var(--font-text);
+}
+
