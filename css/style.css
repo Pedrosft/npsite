@@ -1,37 +1,10 @@
 :root{
     --cor-prin: red;
-}
-.vasco{
-    width: 100%;
-}
+    --color1-clara1: #a9b0ff;
+    --color2-clara2: #8791dd;
+    --color3-meiotermo: #6473bb;
+    --color4-esura2: #425498;
+    --color5-escura1: #3e4b8c;
+    --color-muitoClara:#ebecfb;
 
-body {
-    text-align: center;
-    
 }
-
-.btn{
-   background-color: brown;
-}
-
-.btn:hover {
-    background-color: rgb(255, 27, 27);
-}
-
-.cor-btn-azul{
-    --cor-prin: darkblue;
-    background-color: var(--cor-prin);
-}
-
-.cor-btn-azul:hover {
-    background-color: rgb(49, 49, 255);
-}
-.cor-btn-verde{
-    --cor-prin: green;
-    background-color: var(--cor-prin);
-}
-
-.cor-btn-verde:hover {
-    background-color: rgb(46, 255, 46);
-}
-
