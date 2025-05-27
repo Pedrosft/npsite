@@ -1,7 +1,25 @@
+:root{
+    --cor-prin: brown;
+}
 .vasco{
     width: 100%;
 }
 
 body {
     text-align: center;
+    
 }
+
+.btn{
+   background-color: var(--cor-prin);
+}
+
+.cor-btn-azul{
+    --cor-prin: white;
+    background-color: var(--cor-prin);
+}
+.cor-btn-verde{
+    --cor-prin: green;
+    background-color: var(--cor-prin);
+}
+
