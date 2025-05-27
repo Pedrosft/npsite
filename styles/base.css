@@ -9,8 +9,8 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 15px 35px;
     background-color: var(--color7-muitoescura);
+    padding: 0 15px;
 }
 
 .logo {
@@ -22,17 +22,20 @@
 .navbar a {
     text-decoration: none;
     color: white;
+    display: block;
+    padding: 1rem;
 }
 
 ul {
     list-style: none;
     display: flex;
     font-family: var(--primary-font);
+    font-size: 25px;
 }
 
-li {
-    margin: 10px 25px;
-    font-size: 25px;
+.nav-link:hover {
+    color: var(--color1-clara1);
+    text-decoration: overline;
 }
 
 .hamburger {
