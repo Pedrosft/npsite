@@ -1,5 +1,5 @@
 :root{
-    --cor-prin: brown;
+    --cor-prin: red;
 }
 .vasco{
     width: 100%;
@@ -11,15 +11,27 @@ body {
 }
 
 .btn{
-   background-color: var(--cor-prin);
+   background-color: brown;
+}
+
+.btn:hover {
+    background-color: rgb(255, 27, 27);
 }
 
 .cor-btn-azul{
-    --cor-prin: white;
+    --cor-prin: darkblue;
     background-color: var(--cor-prin);
+}
+
+.cor-btn-azul:hover {
+    background-color: rgb(49, 49, 255);
 }
 .cor-btn-verde{
     --cor-prin: green;
     background-color: var(--cor-prin);
+}
+
+.cor-btn-verde:hover {
+    background-color: rgb(46, 255, 46);
 }
 
