@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Delius&family=Oswald:wght@200..700&display=swap');
 
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap");
 
 :root{
     --color1-clara1: #a9b0ff;
     --color2-clara2: #8791dd;
     --color3-meiotermo: #6473bb;
-    --color4-esura2: #425498;
+    --color4-escura2: #425498;
     --color5-escura1: #3e4b8c;
-    --color-muitoClara:#ebecfb;
+    --color6-muitoClara:#ebecfb;
+    --color7-muitoescura: #001972;
 
     /* Fonte padão */
-    --font-text:  font-family: "Oswald", sans-serif;
+    --primary-font: "Oswald", sans-serif;
+    --secondary-font: "Roboto Slab", Arial
 }
 
 body{
