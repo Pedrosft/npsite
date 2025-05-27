@@ -4,3 +4,52 @@
 
 
 
+.container_client{
+
+    
+    width: 100%;
+    padding: 20px;
+}
+
+.div2_texto{
+    width: 60%;
+    display: inline;
+
+}
+.div1_name h3{
+    font-size: 70px;
+}
+
+.div1_name{
+        display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    display: inline;
+    font-size: 25px;
+}
+
+
+.container_mural{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.div_separação{
+    width: 80%;
+}
+
+.div_icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.div_homenagens{
+    display: flex;
+}
