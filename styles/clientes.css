@@ -1,55 +1,118 @@
 @import url(style.css);
 @import url(atributos/botao.css);
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    border: 2px solid red;
+    margin: 8px;
+    gap: 8px;
+    display: grid;
+    /* grid-template-columns:  100px 100px 100px; */
+    /* grid-template-columns: 2fr 1fr 1fr; */
+    /* grid-template-columns: minmax(0, 1fr) minmax(400px, 1fr); */
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    /* grid-template-rows: auto 200px; */
+    /* grid-auto-rows: 200px; */
+
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
 
 
 
-.container_client{
+.item{
+    background-color: aqua;
+}
+
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 20px;
+}
+
+/* CSS PRIMEIRA DIV */
+    
+.div1 {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    padding: 20px;
+    
+}
+
+.div1_int{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: flex-end;
+    flex-direction: row;
+    background: linear-gradient(45deg, var(--color1-clara1), var(--color3-meiotermo));
+    padding: 15px;
+    font-size: 65px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+    color: white;
+    text-align: center;
 
     
-    width: 100%;
-    padding: 20px;
+}
+.icon-text{
+    padding: 30px;
 }
 
-.div2_texto{
-    width: 60%;
-    display: inline;
-
-}
-.div1_name h3{
-    font-size: 70px;
+.icon-text p{
+    font-size: 15px;
+    text-align: center;
 }
 
-.div1_name{
-        display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
-    display: inline;
-    font-size: 25px;
+.icon-text:hover{
+    background-color: var(--color6-muitoClara);
+    padding: 30px;
+    color: var(--color7-muitoescura);
+    border-radius: 10px;
 }
 
+/* CSS PRIMEIRA DIV */
 
-.container_mural{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+
+.div2 {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-column-start: 4;
 }
 
-.div_separação{
-    width: 80%;
+.div3 {
+    grid-column: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 5;
 }
 
-.div_icons{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.div4 {
+    grid-column: span 3 / span 3;
+    grid-row: span 3 / span 3;
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+ 
+@media screen and (max-width: 920px) {
+    .parent {
+    display: grid;
+    grid-template-columns: 1fr; /* apenas 1 coluna */
+    grid-auto-rows: 700px;      /* altura fixa para cada linha */
+    gap: 8px;                   /* espaçamento entre as divs */
 }
 
-.div_homenagens{
-    display: flex;
+    .div1, .div2, .div3, .div4 {
+        grid-column: 1 / 2;  /* cada div ocupa toda a coluna */
+        grid-row: auto;      /* ocupa uma linha do grid */
+}
+    .div1_int{
+        font-size: 45px;
+        flex-wrap: wrap;
+    }
 }
