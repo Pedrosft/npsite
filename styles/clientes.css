@@ -44,6 +44,7 @@
     grid-column: span 3 / span 3;
     grid-row: span 2 / span 2;
     padding: 20px;
+    padding-bottom: 0;
     
 }
 
@@ -148,27 +149,64 @@
     grid-column: span 2 / span 2;
     grid-column-start: 4;
     grid-row-start: 5;
+    padding: 20px;
+    box-shadow: var(--boxshadow);
+    border-radius: 10px;
+    margin: 20px;
 }
+
+
+
+.div_adm{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    /* justify-content: center; */
+}
+.div_adm i{
+    font-size: 40px;
+    margin-right: 20px;
+    color: var(--color7-muitoescura);
+
+}
+
+#name_adm{
+    color: var(--color7-muitoescura);
+    font-size: 20px;
+}
+
 
 .div4 {
     grid-column: span 3 / span 3;
     grid-row: span 3 / span 3;
     grid-column-start: 1;
     grid-row-start: 3;
+    padding: 20px;
+    padding-top: 0px;
+    box-shadow: var(--boxshadow);
+    border-radius: 10px;
+    margin: 20px;
+    margin-top: 0px;
 }
  
 @media screen and (max-width: 920px) {
     .parent {
+    
     display: grid;
-    grid-template-columns: 1fr; /* apenas 1 coluna */
-    grid-auto-rows: 700px;      /* altura fixa para cada linha */
-    gap: 8px;                   /* espaçamento entre as divs */
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2px;
+             /* espaçamento entre as divs */
 }
 
     .div1, .div2, .div3, .div4 {
         grid-column: 1 / 2;  /* cada div ocupa toda a coluna */
         grid-row: auto;      /* ocupa uma linha do grid */
 }
+    .div3 {
+    height: 100px;
+}
+ 
     .div1_int{
         font-size: 45px;
         flex-wrap: wrap;
