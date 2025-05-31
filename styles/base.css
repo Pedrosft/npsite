@@ -42,23 +42,6 @@ ul {
     text-decoration: overline;
 }
 
-.sign-button {
-    padding: 10px;
-    margin: auto 20px;
-    border-radius: 10px;
-    background-color: black;
-    border: 1px solid white;
-    color: white;
-    font-family: var(--primary-font);
-    font-size: 1.2rem;
-}
-
-.sign-button:hover {
-    background-color: rgb(152, 147, 147);
-    color: black;
-    border: 1px solid black;
-}
-
 .hamburger {
     display: none;
 }
@@ -117,15 +100,12 @@ img {
             width: 100%;
             text-align: center;
         }
-        .sign-button {
-            display: none;
-        }
     }
     
     .logo {
         font-size: 30px;
     }
-    
+
     .hamburger {
         display: block;
         margin: 1.4rem 0;
