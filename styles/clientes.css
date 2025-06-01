@@ -2,13 +2,13 @@
 @import url(base.css);
 @import url(atributos/botao.css);
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     border: 2px solid red;
     margin: 8px;
     gap: 8px;
@@ -25,7 +25,7 @@
 
 
 
-.item{
+.item {
     background-color: aqua;
 }
 
@@ -40,16 +40,16 @@
 }
 
 /* CSS PRIMEIRA DIV */
-    
+
 .div1 {
     grid-column: span 3 / span 3;
     grid-row: span 2 / span 2;
     padding: 20px;
     padding-bottom: 0;
-    
+
 }
 
-.div1_int{
+.div1_int {
     display: flex;
     justify-content: space-evenly;
     align-content: flex-end;
@@ -62,18 +62,19 @@
     color: var(--color5-escura1);
     text-align: center;
 
-    
+
 }
-.icon-text{
+
+.icon-text {
     padding: 30px;
 }
 
-.icon-text p{
+.icon-text p {
     font-size: 15px;
     text-align: center;
 }
 
-.icon-text:hover{
+.icon-text:hover {
     background-color: var(--color6-muitoClara);
     padding: 30px;
     color: var(--color7-muitoescura);
@@ -91,16 +92,17 @@
     box-shadow: var(--boxshadow);
     border-radius: 10px;
     margin: 20px;
-    
+
 }
 
 
 
-.div2 h4{
+.div2 h4 {
     font-size: 30px;
     margin-bottom: 20px;
     color: var(--color7-muitoescura);
 }
+
 .text_velorio {
     /* border: 1px solid red; */
     padding: 20px;
@@ -108,31 +110,32 @@
     font-size: 20px;
     background-color: var(--color7-muitoescura);
     color: var(--color6-muitoClara);
-    
-    
-    
+
+
+
 }
 
-.box_text{
+.box_text {
     border: 1px solid var(--color6-muitoClara);
     padding-bottom: 20px;
 }
-.text_loc_data{
+
+.text_loc_data {
     margin-top: 20px;
-    
+
 }
 
-.velorio-div2{
+.velorio-div2 {
     padding-bottom: 30px;
     margin-bottom: 20px;
 }
 
-.velorio-div2 i{
+.velorio-div2 i {
     color: var(--color7-muitoescura);
     margin-right: 10px;
     margin-top: 5px;
     margin-left: 20px;
-    
+
 }
 
 
@@ -161,13 +164,13 @@
     margin-top: 0px;
 }
 
-.div4 h4{
+.div4 h4 {
     font-size: 30px;
     margin-bottom: 20px;
     color: var(--color7-muitoescura);
 }
 
-.perfil_comeent_text p{
+.perfil_comeent_text p {
     color: var(--color6-muitoClara);
     font-size: 20px;
 }
@@ -180,7 +183,7 @@
 }
 
 
-    
+
 .perfil_comeent {
     grid-column: span 2 / span 2;
     display: flex;
@@ -192,11 +195,11 @@
     border-radius: 10px 10px 0 0;
     text-align: center;
     padding: 20px;
-    
+
 }
 
 
-.box_div4{
+.box_div4 {
     border-left: 1px solid var(--color6-muitoClara);
     border-bottom: 1px solid var(--color6-muitoClara);
     border-right: 1px solid var(--color6-muitoClara);
@@ -211,16 +214,17 @@
     grid-row-start: 2;
     height: 200px;
 }
-.date_name_coment{
+
+.date_name_coment {
     color: var(--color5-escura1);
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
-    
-    
+
+
 }
 
-.coment_coment p{
+.coment_coment p {
     text-align: center;
     color: var(--color7-muitoescura);
     font-size: 20px;
@@ -228,7 +232,7 @@
     font-style: italic;
 }
 
-.coment_coment2 p{
+.coment_coment2 p {
     text-align: center;
     color: var(--color7-muitoescura);
     font-size: 20px;
@@ -260,7 +264,7 @@
     grid-row-start: 2;
     height: 200px;
 }
-      
+
 .div3 {
     grid-column: span 2 / span 2;
     grid-column-start: 4;
@@ -273,43 +277,50 @@
 
 
 
-.div_adm{
+.div_adm {
     display: flex;
     flex-direction: row;
     align-content: center;
     /* justify-content: center; */
 }
-.div_adm i{
+
+.div_adm i {
     font-size: 40px;
     margin-right: 20px;
     color: var(--color7-muitoescura);
 
 }
 
-#name_adm{
+#name_adm {
     color: var(--color7-muitoescura);
     font-size: 20px;
 }
- 
+
 @media screen and (max-width: 920px) {
     .parent {
-    
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 2px;
-             /* espaçamento entre as divs */
-}
 
-    .div1, .div2, .div3, .div4 {
-        grid-column: 1 / 2;  /* cada div ocupa toda a coluna */
-        grid-row: auto;      /* ocupa uma linha do grid */
-}
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 2px;
+        /* espaçamento entre as divs */
+    }
+
+    .div1,
+    .div2,
+    .div3,
+    .div4 {
+        grid-column: 1 / 2;
+        /* cada div ocupa toda a coluna */
+        grid-row: auto;
+        /* ocupa uma linha do grid */
+    }
+
     .div3 {
-    height: 100px;
-}
- 
-    .div1_int{
+        height: 100px;
+    }
+
+    .div1_int {
         font-size: 45px;
         flex-wrap: wrap;
     }
